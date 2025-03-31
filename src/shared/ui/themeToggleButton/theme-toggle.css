@@ -1,0 +1,20 @@
+.theme-toggle-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.theme-toggle-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 300ms, transform 300ms;
+}
+
+.theme-toggle-exit {
+  opacity: 1;
+}
+
+.theme-toggle-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
