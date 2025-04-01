@@ -2,13 +2,20 @@
 
 A modern React application with authentication, theme toggling, and responsive design.
 
+Actual credentials is 
+
+```
+Email: test@test
+Password: qwer
+```
+
 ## 📋 Features
 
-- **JWT Authentication** - Secure login with JSON Web Tokens
+- **Mock JWT Authentication** - Secure login with JSON Web Tokens
 - **Theme System** - Light & dark mode with smooth transitions
 - **Responsive Design** - Works on all device sizes
 - **Custom Font** - Uses Martian Mono font throughout the app
-- **Form Validation** - Prevents invalid data submission
+- **Form Validation** - Prevents invalid data submission. Notification when Caps Lock is pressed in the password input field.
 - **Custom UI Components** - Reusable, animated components
 - **Mock API** - Testing without a backend
 
@@ -173,6 +180,7 @@ Breakpoints follow Tailwind CSS defaults:
 # 🚧 Future Enhancements
 
 - OAuth
+- Tests
 
 # 📄 License
 
