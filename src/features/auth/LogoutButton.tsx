@@ -9,5 +9,5 @@ export const LogoutButton = () => {
     navigate("/");
   };
 
-  return <Button onClick={handleLogout}>Logout</Button>;
+  return <Button onClick={handleLogout} className="cursor-pointer">Logout 🚪</Button>;
 };
