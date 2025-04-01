@@ -12,4 +12,8 @@ export default defineConfig({
   build: {
     outDir: "dist",
   },
+  define: {
+    global: {},
+    crypto: crypto,
+  },
 });
