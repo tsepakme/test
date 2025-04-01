@@ -2,7 +2,7 @@
 
 A modern React application with authentication, theme toggling, and responsive design.
 
-Actual credentials is 
+## 🔑 Test Credentials
 
 ```
 Email: test@test
