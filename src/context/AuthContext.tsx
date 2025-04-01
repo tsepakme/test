@@ -16,7 +16,7 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const token = localStorage.getItem("token");
+    const token = localStorage.getItem("auth_token");
     const email = localStorage.getItem("userEmail");
 
     if (token && email) {
@@ -29,13 +29,13 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({ children
   const login = (token: string, email: string) => {
     const userData: User = { token, email };
     setUser(userData);
-    localStorage.setItem("token", token);
+    localStorage.setItem("auth_token", token);
     localStorage.setItem("userEmail", email);
   };
 
   const logout = () => {
     setUser(null);
-    localStorage.removeItem("token");
+    localStorage.removeItem("auth_token");
     localStorage.removeItem("userEmail");
   };
 
