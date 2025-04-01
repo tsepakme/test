@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import { lazy, Suspense } from 'react';
 import { Loader } from '../shared/ui/loader';
 import PrivateRoute from "../components/PrivateRoute";
@@ -14,7 +14,7 @@ const App = () => {
     <ThemeProvider>
       <ErrorBoundary>
         <AuthProvider>
-          <BrowserRouter>
+          <HashRouter>
             <Suspense fallback={<div className="page-loader"><Loader /></div>}>
               <Routes>
                 <Route path="/" element={<LoginPage />} />
@@ -26,7 +26,7 @@ const App = () => {
                 <Route path="*" element={<Navigate to="/" />} />
               </Routes>
             </Suspense>
-          </BrowserRouter>
+          </HashRouter>
         </AuthProvider>
       </ErrorBoundary>
     </ThemeProvider>
