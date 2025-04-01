@@ -6,6 +6,7 @@ import { NodeGlobalsPolyfillPlugin } from "@esbuild-plugins/node-globals-polyfil
 import { NodeModulesPolyfillPlugin } from "@esbuild-plugins/node-modules-polyfill";
 import rollupNodePolyFill from "rollup-plugin-node-polyfills";
 import inject from "@rollup/plugin-inject";
+import { Plugin as RollupPlugin } from 'rollup';
 
 export default defineConfig({
   plugins: [
@@ -30,7 +31,7 @@ export default defineConfig({
   build: {
     outDir: "dist",
     rollupOptions: {
-      plugins: [rollupNodePolyFill()],
+      plugins: [rollupNodePolyFill() as RollupPlugin],
     },
   },
   resolve: {
