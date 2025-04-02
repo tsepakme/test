@@ -84,6 +84,7 @@ export const LoginForm = () => {
             })}
           />
           <button
+          aria-label="Toggle password visibility"
             type="button"
             onClick={() => setShowPassword(!showPassword)}
             className={`absolute right-3 top-1/2 -translate-y-1/2 ${
